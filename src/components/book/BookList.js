@@ -14,12 +14,14 @@ function BookList() {
   return (
     <>
       <h1>Book List</h1>
-      <Link to="/books">Return to Books List</Link>
+      <Link to="/">Return Home</Link>
 
       <ul className="book-list" aria-label="book list">
         {books.map((book) => (
           <li key={book.book_id}>
-            <Book book={book} />
+            <Link to={`/books/${book.book_id}`}>
+              <Book book={book} />
+            </Link>
           </li>
         ))}
       </ul>
