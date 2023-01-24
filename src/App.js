@@ -10,7 +10,7 @@ function App() {
     <main className="container">
       <Switch>
         <Route exact path={'/'}>
-          <h1> Book Catalog</h1>
+          <h1>Library Catalog</h1>
           <Link to="/books">Book List</Link>
         </Route>
         <Route exact path="/books" component={BookList} />
